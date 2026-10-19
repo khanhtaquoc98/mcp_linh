@@ -1,0 +1,32 @@
+{
+  "_comment_1": "CÁCH 1: Sử dụng uv run (Khuyên dùng khi git clone sang máy khác để tự động quản lý thư viện)",
+  "mcpServers_uv_example": {
+    "office-automation": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with-requirements",
+        "<ĐƯỜNG_DẪN_TUYỆT_ĐỐI_TỚI_THƯ_MỤC_PROJECT>/requirements.txt",
+        "python",
+        "<ĐƯỜNG_DẪN_TUYỆT_ĐỐI_TỚI_THƯ_MỤC_PROJECT>/office_server.py"
+      ]
+    }
+  },
+  "_comment_2": "CÁCH 2: Sử dụng môi trường ảo venv truyền thống (macOS / Linux vs Windows)",
+  "mcpServers_venv_mac_linux": {
+    "office-automation": {
+      "command": "<ĐƯỜNG_DẪN_TUYỆT_ĐỐI_TỚI_THƯ_MỤC_PROJECT>/venv/bin/python",
+      "args": [
+        "<ĐƯỜNG_DẪN_TUYỆT_ĐỐI_TỚI_THƯ_MỤC_PROJECT>/office_server.py"
+      ]
+    }
+  },
+  "mcpServers_venv_windows": {
+    "office-automation": {
+      "command": "<ĐƯỜNG_DẪN_TUYỆT_ĐỐI_TỚI_THƯ_MỤC_PROJECT>\\venv\\Scripts\\python.exe",
+      "args": [
+        "<ĐƯỜNG_DẪN_TUYỆT_ĐỐI_TỚI_THƯ_MỤC_PROJECT>\\office_server.py"
+      ]
+    }
+  }
+}
